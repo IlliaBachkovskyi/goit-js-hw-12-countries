@@ -35,6 +35,17 @@ function renderCountry(country) {
       sticker: false,
       delay: 2500,
     });
+  } else if (countryList == null) {
+    console.log('Incorrect name');
+    error({
+      title: false,
+      text: 'Give me another letters',
+      shadow: true,
+      icon: false,
+      width: '250px',
+      sticker: false,
+      delay: 2500,
+    });
   }
 }
 
